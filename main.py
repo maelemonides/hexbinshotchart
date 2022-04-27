@@ -87,7 +87,6 @@ df = (df.loc[df['PLAYER_NAME'] == player])
 
 
 # General plot parameters
-mpl.rcParams['font.family'] = 'Avenir'
 mpl.rcParams['font.size'] = 18
 mpl.rcParams['axes.linewidth'] = 2
     
@@ -103,9 +102,8 @@ ax = create_court(ax, 'black')
 # Annotate player name and season
 title = player + '\n2015-16 Regular Season'
 
-ax.text(0, 1.05, 'Stephen Curry\n2015-16 Regular Season', transform=ax.transAxes, ha='left', va='baseline')
+ax.text(0, 1.05, title, transform=ax.transAxes, ha='left', va='baseline')
 
-plt.show()
 # Save and show figure
 plt.savefig('ShotChart.png', dpi=300, bbox_inches='tight')
 plt.show()
