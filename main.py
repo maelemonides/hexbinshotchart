@@ -106,3 +106,6 @@ title = player + '\n2015-16 Regular Season'
 ax.text(0, 1.05, 'Stephen Curry\n2015-16 Regular Season', transform=ax.transAxes, ha='left', va='baseline')
 
 plt.show()
+# Save and show figure
+plt.savefig('ShotChart.png', dpi=300, bbox_inches='tight')
+plt.show()
